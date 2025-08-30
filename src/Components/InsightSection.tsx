@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 const InsightSection = () => {
     return (
         <div className="p-2 grid md:grid-cols-3  sm:grid-cols-2 grid-cols-1 gap-3">
-            <div>
+            <div className="h-[569px]">
                 <Card>
                     <CardContent>
                         <h1 className="text-center font-semibold">Account Progress</h1>
@@ -62,8 +62,8 @@ const InsightSection = () => {
                     </CardContent>
                 </Card>
             </div>
-            <div className="flex flex-col gap-5">
-                <Card>
+            <div className="flex flex-col gap-5 h-[569px]">
+                <Card className="h-[270]">
                     <CardContent>
                         <h1 className="font-semibold">Total Franchisees Onboard</h1>
                         <div className="flex justify-between items-center mb-2 mt-4">
@@ -148,7 +148,7 @@ const InsightSection = () => {
                         </div>
                     </CardContent>
                 </Card>
-                <Card>
+                <Card className="h-[275]">
                     <CardContent>
                         <h1 className="font-semibold">Financial Wellbeing</h1>
                         <div className="flex items-center justify-between mt-4">
@@ -180,8 +180,8 @@ const InsightSection = () => {
                     </CardContent>
                 </Card>
             </div>
-            <div className="flex flex-col gap-5">
-                <Card>
+            <div className="flex flex-col gap-5 h-[569px]">
+                <Card className="h-[270px]">
                     <CardContent>
                         <h1 className="font-semibold ">Key Insights & Feedback</h1>
                         <div className="flex items-center justify-between mt-4">
@@ -207,7 +207,7 @@ const InsightSection = () => {
                         </div>
                     </CardContent>
                 </Card>
-                <Card>
+                <Card className="h-[275]">
                     <CardContent>
                         <h1 className="font-semibold">Prospect Leads</h1>
                         <div className="flex flex-col gap-3 mt-5">

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex relative">
       <Sidebar navbar={navbar} setNavbar={setNavbar} />
-      <div className={`w-full p-2 ${navbar ? "absolute inset-0 z-10 blur-[2px] overflow-hidden" : ""}`}>
+      <div className={`w-full p-2 ${navbar ? "transition-all duration-300 ease-in-out absolute inset-0 z-10 blur-[2px] overflow-hidden" : ""}`}>
         <Navbar setNavbar={setNavbar} />
         <InsightSection />
         <UploadSection />

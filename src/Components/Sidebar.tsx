@@ -5,7 +5,7 @@ const Sidebar = ({ navbar, setNavbar }: { navbar: boolean, setNavbar: (arg: bool
   const SideBarContent = ["Home", "Stages & Checklist", "Upload Docs", "Preferred Vendors", "Tech Stack", "Targets", "Zee Sales Targets", "MAI Settings", "Pending Questions"]
 
   return (
-    <div className={`z-50 w-70 min-h-screen p-4 bg-[#11455D] relative overflow-y-auto ${!navbar ? "hidden" : ""} md:block `}>
+    <div className={`z-50 w-70 min-h-screen p-4 bg-[#11455D] relative transition-all duration-300 ease-in-out overflow-y-auto ${!navbar ? "hidden" : ""} md:hidden `}>
       {/* Close button for mobile  */}
       <button className="md:hidden absolute top-2 right-2" onClick={() => setNavbar(false)}>
         <ArrowBigLeftDash className="size-6 text-muted-foreground" />
